@@ -1,9 +1,9 @@
+using Microsoft.AspNetCore.Identity;
+
 namespace ExpenseTracker.Domain.Entities;
 
-public class UserEntity
+public class UserEntity : IdentityUser
 {
-    public required int Id { get; set; }
-    public required string Email { get; set; }
     public required string FirstName { get; set; }
     public required string LastName { get; set; }
 }
