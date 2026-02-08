@@ -5,6 +5,7 @@ namespace ExpenseTracker.Domain.Entities;
 public class AccountEntity
 {
     public required int Id { get; set; }
+    public required int UserId { get; set; }
     public required int CategoryId { get; set; }
     
     public required string Name { get; set; }
